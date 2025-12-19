@@ -17,6 +17,7 @@ export default function App() {
       backgroundPosition: 'center',    // Centers the texture
       backgroundRepeat: 'no-repeat',   // Prevents tiling
       backgroundAttachment: 'fixed',
+      overflow: 'hidden'
     }}>
       {/* TITLE */}
       <h1 className="font-serif text-[#3E5F3E] mb-14 imperial-script-regular" style={{ fontSize: '4rem' }}>

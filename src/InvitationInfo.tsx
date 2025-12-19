@@ -30,9 +30,13 @@ export default function InvitationInfo() {
             </h2>
             {/* FLOWER DECORATION */}
             <img
-              src="/flower-divider.png"
+              src="/images/flower-fall.png"
               alt=""
               className="absolute -right-14 top-1/2 w-20 -translate-y-1/2"
+              style={{
+                right: '-51px',
+                width: '34%'
+              }}
             />
           </div>
 

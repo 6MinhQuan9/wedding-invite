@@ -77,23 +77,23 @@ export default function StorySection() {
         </div>
 
         <img
-          src="/flower-orchid.png"
+          src="/images/flower-fall.png"
           alt=""
           style={{
             position: "absolute",
-            top: "36px",
-            left: "-12px",
-            width: "86px",
+            top: "0",
+            left: "-10px",
+            width: "116px",
           }}
         />
 
         <img
-          src="/flower-orchid.png"
+          src="/images/flower-fall.png"
           alt=""
           style={{
             position: "absolute",
-            bottom: "110px",
-            right: "-10px",
+            bottom: "137px",
+            right: "10px",
             width: "82px",
             transform: "scaleX(-1)",
           }}
@@ -121,7 +121,7 @@ export default function StorySection() {
           >
             Chúng ta cảm ơn quá khứ, trân trọng hiện tại và cùng nhau
             viết tiếp tương lai. Với tất cả tình yêu và lòng biết ơn,
-            chúng ta bắt đầu một chương mới: gia đình.
+            chúng ta bắt đầu một chương mới Gia Đình.
           </p>
         </div>
       </div>

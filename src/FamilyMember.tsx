@@ -36,7 +36,7 @@ export default function FamilyMember() {
                             Nhà Trai
                         </h3>
                         <p className="text-sm text-gray-800">
-                            Bà Hoàng Thị Tuyến
+                            Bà Hoàng Thị Tuyển
                         </p>
                         <p className="text-xs text-gray-600 mt-2 italic">
                             Phượng Hoà Bình, tỉnh Phú Thọ

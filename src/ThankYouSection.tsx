@@ -36,25 +36,25 @@ export default function ThankYouSection() {
 
         {/* FLOWER DECORATION */}
         <img
-          src="/flower-orchid.png"
+          src="/images/flower-fall.png"
           alt=""
           style={{
             position: "absolute",
-            right: "40px",
-            top: "96px",
+            right: "-4px",
+            top: "102px",
             width: "90px",
             opacity: 0.9,
           }}
         />
 
         <img
-          src="/flower-orchid-small.png"
+          src="/images/flower-fall.png"
           alt=""
           style={{
             position: "absolute",
             left: "36px",
-            bottom: "72px",
-            width: "42px",
+            bottom: "-28px",
+            width: "60px",
             opacity: 0.85,
           }}
         />

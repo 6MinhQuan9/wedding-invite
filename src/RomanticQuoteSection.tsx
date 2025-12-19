@@ -61,13 +61,13 @@ export default function RomanticQuoteSection() {
 
                     {/* OPTIONAL FLOWER DECORATION */}
                     <img
-                        src="/flower-corner.png"
+                        src="/images/flower-right.png"
                         alt=""
                         style={{
                             position: "absolute",
-                            bottom: "0",
-                            left: "0",
-                            width: "64px",
+                            bottom: "18px",
+                            right: "0",
+                            width: "236px",
                         }}
                     />
                 </div>
