@@ -106,10 +106,11 @@ export default function RSVPSection() {
         {/* GIFTS */}
         <h3
           style={{
-            fontSize: "26px",
+            fontSize: "3em",
             color: "#6E7F5D",
             marginBottom: "20px",
           }}
+          className="alex-brush-regular"
         >
           Gửi mừng cưới
         </h3>
@@ -122,7 +123,7 @@ export default function RSVPSection() {
           }}
         >
           <div style={{ textAlign: "center" }}>
-            <p style={{ fontSize: "14px", color: "#555", marginBottom: "8px" }}>
+            <p style={{ fontSize: "1.5em", color: "#555", marginBottom: "8px" }} className="alex-brush-regular">
               Chú rể
             </p>
 
@@ -134,7 +135,7 @@ export default function RSVPSection() {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <p style={{ fontSize: "14px", color: "#555", marginBottom: "8px" }}>
+            <p style={{ fontSize: "1.5em", color: "#555", marginBottom: "8px" }} className="alex-brush-regular">
               Cô dâu
             </p>
             <img

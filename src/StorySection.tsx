@@ -92,7 +92,7 @@ export default function StorySection() {
           alt=""
           style={{
             position: "absolute",
-            bottom: "137px",
+            bottom: "218px",
             right: "10px",
             width: "82px",
             transform: "scaleX(-1)",
@@ -103,7 +103,7 @@ export default function StorySection() {
           <p
             style={{
               fontFamily: "'Monsieur La Doulaise', cursive",
-              fontSize: "26px",
+              fontSize: "3em",
               color: "#6E7F5D",
               marginBottom: "12px",
             }}
@@ -113,15 +113,14 @@ export default function StorySection() {
 
           <p
             style={{
-              fontSize: "13px",
+              fontSize: "1em",
               color: "#666",
               lineHeight: "1.6",
               padding: "0 12px",
             }}
           >
-            Chúng ta cảm ơn quá khứ, trân trọng hiện tại và cùng nhau
-            viết tiếp tương lai. Với tất cả tình yêu và lòng biết ơn,
-            chúng ta bắt đầu một chương mới Gia Đình.
+            Chúng ta cảm ơn quá khứ, chúng ta trân trọng hiện tại và sẽ cùng nhau
+            viết tiếp tương lai. Với tất cả lòng biết ơn, chúng ta bắt đầu một chương mới là vợ chồng, là gia đình và là nhà.
           </p>
         </div>
       </div>

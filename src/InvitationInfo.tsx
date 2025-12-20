@@ -6,7 +6,7 @@ export default function InvitationInfo() {
   // 1. Get URL Parameters logic
   // URL example: yourdomain.com/?name=Anh Quý&partner=Chị Lan
   const queryParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
-  const guestName = queryParams?.get("name") || "Bạn"; 
+  const guestName = queryParams?.get("name") || "Bạn";
   const partnerName = queryParams?.get("partner");
 
   return (
@@ -26,9 +26,9 @@ export default function InvitationInfo() {
         {/* NAMES – VERTICAL STACKED STYLE */}
         <div className="relative text-center funnel-display">
           <div className="relative block">
-            <h2 className="text-[26px] tracking-wide text-[#3E5F3E] text-start">
-              MINH QUÂN
-            </h2>
+            <div className="text-[26px] tracking-wide text-[#3E5F3E] text-start alex-brush-regular" style={{ fontSize: '3em' }}>
+              Minh Quân
+            </div>
             {/* FLOWER DECORATION */}
             <img
               src="/images/flower-fall.png"
@@ -43,14 +43,17 @@ export default function InvitationInfo() {
           </div>
 
           {/* AMPERSAND */}
-          <div className="mt-3 text-[#3E5F3E] text-xl">
+          <div className="mt-3 text-[#3E5F3E] text-xl alex-brush-regular" style={{ fontSize: '2.5em' }}>
             &
           </div>
 
           {/* SECOND NAME */}
-          <h2 className="mt-2 text-[26px] tracking-wide text-[#3E5F3E] text-end">
-            THU HẰNG
-          </h2>
+          <div
+            className="mt-2 text-[26px] tracking-wide text-[#3E5F3E] text-end alex-brush-regular"
+            style={{ fontSize: '3em' }}
+          >
+            Thu Hằng
+          </div>
         </div>
 
         {/* INVITATION TEXT */}
@@ -60,10 +63,10 @@ export default function InvitationInfo() {
 
         {/* GUEST NAME SECTION (Dynamic from URL) */}
         <div className="mt-2 flex flex-col items-center">
-          <p className="text-xl text-red-600 font-handwriting" style={{ fontSize: '2rem' }}>
+          <p className="alex-brush-regular" style={{ fontSize: '3rem', margin: '0' }}>
             {guestName}
           </p>
-          
+
           {/* Shows ONLY if partner param exists in URL */}
           {partnerName && (
             <p className="text-sm text-gray-600 italic mt-1">
@@ -154,8 +157,8 @@ export default function InvitationInfo() {
 
         {/* LOCATION */}
         <div className="mt-8 text-sm text-gray-700 leading-relaxed">
-          <p>Hôn lễ được tổ chức tại</p>
-          <p className="mt-2 font-serif text-[#3E5F3E] font-bold">
+          <p style={{ textTransform: 'uppercase' }}>Hôn lễ được tổ chức tại</p>
+          <p className="mt-2 font-serif text-[#3E5F3E] font-bold " style={{ fontSize: '1.5em' }}>
             TRUNG TÂM HỘI NGHỊ HÒA BÌNH
           </p>
           <p className="mt-2 text-xs">

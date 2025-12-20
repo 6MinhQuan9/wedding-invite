@@ -43,7 +43,7 @@ export default function AlbumOfLove() {
           <h2 style={{ fontSize: "26px", letterSpacing: "0.12em", color: "#6E7F5D", marginBottom: "2px" }} className="funnel-display">
             ALBUM
           </h2>
-          <div style={{ fontFamily: "'Monsieur La Doulaise', cursive", fontSize: "22px", color: "#6E7F5D" }}>
+          <div style={{ fontFamily: "'Monsieur La Doulaise', cursive", fontSize: "3em", color: "#6E7F5D" }}>
             of
           </div>
           <h2 style={{ fontSize: "26px", letterSpacing: "0.12em", color: "#6E7F5D" }} className="funnel-display">

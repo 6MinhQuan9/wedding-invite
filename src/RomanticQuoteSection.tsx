@@ -41,20 +41,21 @@ export default function RomanticQuoteSection() {
                             left: "50%",
                             transform: "translateX(-50%)",
                             display: "flex",
+                            flexDirection: "column",
                             gap: "14px",
-                            alignItems: "center",
                             fontFamily: "'Monsieur La Doulaise', cursive",
                             color: "rgb(24, 104, 11, 0.78)",
                             lineHeight: "1.3",
                             textShadow: "0 1px 2px rgba(0,0,0,0.06)",
                             whiteSpace: "nowrap",
+                            width: "100%",
                         }}
                     >
-                        <div style={{ fontSize: "32px" }}>
+                        <div style={{ fontSize: "2.5em", display: "flex", justifyContent: "center", paddingLeft: "24px" }}>
                             All of me loves
                         </div>
 
-                        <div style={{ fontSize: "32px" }}>
+                        <div style={{ fontSize: "2.5em", display: "flex", justifyContent: "flex-end", paddingRight: "24px" }}>
                             All of you
                         </div>
                     </div>
@@ -65,8 +66,8 @@ export default function RomanticQuoteSection() {
                         alt=""
                         style={{
                             position: "absolute",
-                            bottom: "18px",
-                            right: "0",
+                            bottom: "-64px",
+                            left: "0",
                             width: "236px",
                         }}
                     />

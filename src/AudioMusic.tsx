@@ -12,7 +12,6 @@ export default function AudioMusic() {
         
         audioRef.current.play()
           .then(() => {
-            console.log("Music started!");
             // Clean up listeners immediately after success
             removeEvents();
           })

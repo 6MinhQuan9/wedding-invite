@@ -55,12 +55,12 @@ export default function TimelineQuoteCountdown() {
                 {/* TIMELINE */}
                 <h3
                     style={{
-                        fontSize: "32px",
+                        fontSize: "3em",
                         color: "#6E7F5D",
                         textAlign: "center",
                         marginBottom: "20px",
                     }}
-                    className="funnel-display"
+                    className="alex-brush-regular"
                 >
                     Timeline
                 </h3>
@@ -80,8 +80,8 @@ export default function TimelineQuoteCountdown() {
                             <rect x="8" y="18" width="48" height="30" rx="4" fill="none" stroke="#3E5F3E" strokeWidth="2" />
                             <circle cx="24" cy="32" r="6" stroke="#3E5F3E" strokeWidth="2" fill="none" />
                         </svg>
-                        <p style={{ fontSize: "13px", color: "#3E5F3E" }}>16:00</p>
-                        <p style={{ fontSize: "12px", color: "#777" }}>Checkin</p>
+                        <p style={{ fontSize: "1em", color: "#3E5F3E" }}>16:00</p>
+                        <p style={{ fontSize: "1em", color: "#777" }}>Checkin</p>
                     </div>
 
                     {/* STEP 2 */}
@@ -90,8 +90,8 @@ export default function TimelineQuoteCountdown() {
                             <path d="M20 40 L32 24 L44 40" stroke="#3E5F3E" strokeWidth="2" fill="none" />
                             <path d="M24 42 L32 30 L40 42" stroke="#3E5F3E" strokeWidth="2" fill="none" />
                         </svg>
-                        <p style={{ fontSize: "13px", color: "#3E5F3E" }}>16:30</p>
-                        <p style={{ fontSize: "12px", color: "#777" }}>Khai Tiệc</p>
+                        <p style={{ fontSize: "1em", color: "#3E5F3E" }}>16:30</p>
+                        <p style={{ fontSize: "1em", color: "#777" }}>Khai Tiệc</p>
                     </div>
 
                     {/* STEP 3 */}
@@ -100,8 +100,8 @@ export default function TimelineQuoteCountdown() {
                             <circle cx="28" cy="36" r="10" stroke="#3E5F3E" strokeWidth="2" fill="none" />
                             <circle cx="36" cy="32" r="10" stroke="#3E5F3E" strokeWidth="2" fill="none" />
                         </svg>
-                        <p style={{ fontSize: "13px", color: "#3E5F3E" }}>17:00</p>
-                        <p style={{ fontSize: "12px", color: "#777" }}>Lễ Thành Hôn</p>
+                        <p style={{ fontSize: "1em", color: "#3E5F3E" }}>17:00</p>
+                        <p style={{ fontSize: "1em", color: "#777" }}>Lễ Thành Hôn</p>
                     </div>
                 </div>
 
@@ -147,11 +147,11 @@ export default function TimelineQuoteCountdown() {
                     >
                         <p
                             style={{
-                                fontFamily: "'Monsieur La Doulaise', cursive",
-                                fontSize: "18px",
+                                fontSize: "1.2em",
                                 color: "#F5F3EC",
                                 lineHeight: "1.4",
                             }}
+                            className="alex-brush-regular"
                         >
                             Being with you turns ordinary moments into timeless memories.
                         </p>
@@ -161,12 +161,12 @@ export default function TimelineQuoteCountdown() {
                 {/* COUNTDOWN */}
                 <h3
                     style={{
-                        fontSize: "30px",
+                        fontSize: "3em",
                         color: "#6E7F5D",
                         textAlign: "center",
                         marginBottom: "18px",
                     }}
-                    className="funnel-display"
+                    className="alex-brush-regular"
                 >
                     Countdown
                 </h3>

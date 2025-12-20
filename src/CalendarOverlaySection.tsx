@@ -41,7 +41,7 @@ export default function CalendarOverlaySection() {
 
         <div style={{
           position: "absolute",
-          top: "55%",
+          top: "50%",
           right: "12%",
           fontFamily: "'Monsieur La Doulaise', cursive",
           fontSize: "32px",

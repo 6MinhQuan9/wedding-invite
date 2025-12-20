@@ -10,6 +10,7 @@ import StorySection from "./StorySection";
 import ThankYouSection from "./ThankYouSection";
 import TimelineQuoteCountdown from "./TimelineQuoteCountdown";
 import AudioMusic from "./AudioMusic";
+import WishOverlay from "./WishesOverlay";
 
 export default function App() {
   return (
@@ -54,6 +55,7 @@ export default function App() {
         <RSVPSection />
         <MapSection />
         <ThankYouSection />
+        <WishOverlay />
       </main>
     </div>
   );
