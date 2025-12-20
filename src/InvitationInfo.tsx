@@ -3,6 +3,12 @@ import { useInView } from "./hooks/useInView";
 export default function InvitationInfo() {
   const { ref, inView } = useInView({ threshold: 0.25 });
 
+  // 1. Get URL Parameters logic
+  // URL example: yourdomain.com/?name=Anh Quý&partner=Chị Lan
+  const queryParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+  const guestName = queryParams?.get("name") || "Bạn"; 
+  const partnerName = queryParams?.get("partner");
+
   return (
     <section className="mt-24 w-full max-w-lg px-6" style={{
       display: 'flex',
@@ -13,17 +19,12 @@ export default function InvitationInfo() {
       {/* PAPER CARD */}
       <div
         ref={ref}
-        className={`rounded-2xl px-8 py-12 text-center shadow-md
-          ${inView ? "animate-invite-slide" : "opacity-0"}
+        className={`rounded-2xl px-8 py-12 text-center shadow-md transition-all duration-1000
+          ${inView ? "animate-invite-slide opacity-100" : "opacity-0"}
         `}
-        style={{
-          backgroundSize: "cover",
-          backgroundBlendMode: "multiply",
-        }}
       >
         {/* NAMES – VERTICAL STACKED STYLE */}
         <div className="relative text-center funnel-display">
-          {/* FIRST NAME */}
           <div className="relative block">
             <h2 className="text-[26px] tracking-wide text-[#3E5F3E] text-start">
               MINH QUÂN
@@ -32,10 +33,11 @@ export default function InvitationInfo() {
             <img
               src="/images/flower-fall.png"
               alt=""
-              className="absolute -right-14 top-1/2 w-20 -translate-y-1/2"
+              className="absolute top-1/2 -translate-y-1/2"
               style={{
                 right: '-51px',
-                width: '34%'
+                width: '34%',
+                pointerEvents: 'none'
               }}
             />
           </div>
@@ -56,9 +58,19 @@ export default function InvitationInfo() {
           TRÂN TRỌNG KÍNH MỜI
         </p>
 
-        <p className="mt-2 text-lg text-red-600 font-handwriting">
-          Bạn
-        </p>
+        {/* GUEST NAME SECTION (Dynamic from URL) */}
+        <div className="mt-2 flex flex-col items-center">
+          <p className="text-xl text-red-600 font-handwriting" style={{ fontSize: '2rem' }}>
+            {guestName}
+          </p>
+          
+          {/* Shows ONLY if partner param exists in URL */}
+          {partnerName && (
+            <p className="text-sm text-gray-600 italic mt-1">
+              cùng với {partnerName}
+            </p>
+          )}
+        </div>
 
         <p className="mt-4 text-sm text-gray-700 leading-relaxed">
           THAM DỰ TIỆC CHUNG VUI
@@ -71,7 +83,7 @@ export default function InvitationInfo() {
           {/* Time */}
           <p
             style={{
-              fontSize: "0.875rem",
+              fontSize: "1.2rem",
               letterSpacing: "0.15em",
               marginBottom: "0.75rem",
             }}
@@ -136,14 +148,14 @@ export default function InvitationInfo() {
               color: "#666",
             }}
           >
-            (Tức ngày 06 tháng 11 năm 2026)
+            (Tức ngày 06 tháng 12 năm Ất Tỵ)
           </p>
         </div>
 
         {/* LOCATION */}
         <div className="mt-8 text-sm text-gray-700 leading-relaxed">
           <p>Hôn lễ được tổ chức tại</p>
-          <p className="mt-2 font-serif text-[#3E5F3E]">
+          <p className="mt-2 font-serif text-[#3E5F3E] font-bold">
             TRUNG TÂM HỘI NGHỊ HÒA BÌNH
           </p>
           <p className="mt-2 text-xs">

@@ -3,11 +3,13 @@ import CalendarOverlaySection from "./CalendarOverlaySection";
 import Envelope from "./Envelope";
 import FamilyMember from "./FamilyMember";
 import InvitationInfo from "./InvitationInfo";
+import MapSection from "./MapDirection";
 import RomanticQuoteSection from "./RomanticQuoteSection";
 import RSVPSection from "./RSVPSection";
 import StorySection from "./StorySection";
 import ThankYouSection from "./ThankYouSection";
 import TimelineQuoteCountdown from "./TimelineQuoteCountdown";
+import AudioMusic from "./AudioMusic";
 
 export default function App() {
   return (
@@ -20,6 +22,7 @@ export default function App() {
       overflow: 'hidden'
     }}>
       {/* TITLE */}
+      <AudioMusic />
       <h1 className="font-serif text-[#3E5F3E] mb-14 imperial-script-regular" style={{ fontSize: '4rem' }}>
         Save our date
       </h1>
@@ -38,6 +41,7 @@ export default function App() {
       <TimelineQuoteCountdown />
       <AlbumOfLove />
       <RSVPSection />
+      <MapSection />
       <ThankYouSection />
     </main>
   );

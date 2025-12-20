@@ -14,10 +14,10 @@ export default function RSVPSection() {
     const { data, error } = await supabase
       .from("rsvps")
       .insert([
-        { 
-          full_name: name, 
-          attending: attending, 
-          guest_count: attending ? count : 0 
+        {
+          full_name: name,
+          attending: attending,
+          guest_count: attending ? count : 0
         },
       ]);
 
@@ -37,7 +37,7 @@ export default function RSVPSection() {
       <div style={{ width: "100%", maxWidth: "420px", textAlign: "center" }}>
         {/* ... (Intro remains the same) ... */}
 
-        <form 
+        <form
           onSubmit={handleSubmit}
           style={{
             backgroundColor: "#FFFFFF",
@@ -103,7 +103,47 @@ export default function RSVPSection() {
           </button>
         </form>
 
-        {/* ... (Gifts / QR section remains same) ... */}
+        {/* GIFTS */}
+        <h3
+          style={{
+            fontSize: "26px",
+            color: "#6E7F5D",
+            marginBottom: "20px",
+          }}
+        >
+          Gửi mừng cưới
+        </h3>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "20px",
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <p style={{ fontSize: "14px", color: "#555", marginBottom: "8px" }}>
+              Chú rể
+            </p>
+
+            <img
+              src="/images/quan-qr.JPG"
+              alt=""
+              style={{ width: "120px", height: "120px" }}
+            />
+          </div>
+
+          <div style={{ textAlign: "center" }}>
+            <p style={{ fontSize: "14px", color: "#555", marginBottom: "8px" }}>
+              Cô dâu
+            </p>
+            <img
+              src="/images/hang-qr.jpg"
+              alt=""
+              style={{ width: "120px", height: "120px" }}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

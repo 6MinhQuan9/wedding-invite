@@ -27,56 +27,41 @@ export default function FamilyMember() {
             </a>
 
             {/* TEXT DETAILS – SLIDE IN (SLIGHT DELAY) */}
-            <div className="mt-10 rounded-2xl px-6 py-8 animate-slide-up-delay">
-                <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-4 text-center">
+            <div className="mt-10 rounded-2xl px-6 py-8 animate-slide-up-delay w-full">
+                {/* Add items-stretch to ensure all columns are the same height */}
+                <div className="grid grid-cols-[1fr_auto_1fr] items-stretch gap-4 text-center">
 
                     {/* LEFT – NHÀ TRAI */}
-                    <div>
-                        <h3 className="text-lg font-serif text-[#3E5F3E] mb-2">
-                            Nhà Trai
-                        </h3>
-                        <p className="text-sm text-gray-800">
-                            Bà Hoàng Thị Tuyển
-                        </p>
-                        <p className="text-xs text-gray-600 mt-2 italic">
-                            Phượng Hoà Bình, tỉnh Phú Thọ
+                    <div className="grid grid-template-rows-subgrid grid-rows-[auto_1fr_auto]">
+                        <h3 className="text-lg font-serif text-[#3E5F3E] mb-2">Nhà Trai</h3>
+                        <div className="flex items-center justify-center"> {/* Centering name container */}
+                            <p className="text-sm text-gray-800">Bà Hoàng Thị Tuyển</p>
+                        </div>
+                        <p className="text-gray-600 mt-2 italic" style={{ fontSize: '12px' }}>
+                            Phường Hoà Bình, tỉnh Phú Thọ
                         </p>
                     </div>
 
                     {/* MIDDLE DIVIDER */}
-                    <div className="flex justify-center items-center h-full">
-                        <div className="flex flex-col items-center justify-between 
-                  bg-[#2F5937] rounded-2xl 
-                  w-10 h-40 py-3 shadow-md h-[70%]">
-
-                            {/* TOP ICON */}
-                            <GiBigDiamondRing
-                                size={20}
-                                className="text-[#F2E6D8]"
-                            />
-
-                            {/* CENTER DOT */}
+                    <div className="flex justify-center items-center">
+                        <div className="flex flex-col items-center justify-between bg-[#2F5937] rounded-2xl w-10 h-[80%] py-3 shadow-md">
+                            <GiBigDiamondRing size={20} className="text-[#F2E6D8]" />
                             <div className="w-2.5 h-2.5 rounded-full bg-[#F2E6D8]" />
-
-                            {/* BOTTOM EMBLEM */}
-                            <GiLotusFlower
-                                size={18}
-                                className="text-[#C9A44D]"
-                            />
+                            <GiLotusFlower size={18} className="text-[#C9A44D]" />
                         </div>
                     </div>
 
                     {/* RIGHT – NHÀ GÁI */}
-                    <div>
-                        <h3 className="text-lg font-serif text-[#3E5F3E] mb-2">
-                            Nhà Gái
-                        </h3>
-                        <p className="text-sm text-gray-800">
-                            Ông Nguyễn Khải Hoàn<br />
-                            Bà Dương T. Thanh Tâm
-                        </p>
-                        <p className="text-xs text-gray-600 mt-2 italic">
-                            Phương Thái Bình, tỉnh Hưng Yên
+                    <div className="grid grid-template-rows-subgrid grid-rows-[auto_1fr_auto]">
+                        <h3 className="text-lg font-serif text-[#3E5F3E] mb-2">Nhà Gái</h3>
+                        <div className="flex items-center justify-center">
+                            <p className="text-sm text-gray-800">
+                                Ông Nguyễn Khải Hoàn<br />
+                                Bà Dương T. Thanh Tâm
+                            </p>
+                        </div>
+                        <p className="text-xs text-gray-600 mt-2 italic" style={{ fontSize: '12px' }}>
+                            Phường Thái Bình, tỉnh Hưng Yên
                         </p>
                     </div>
 

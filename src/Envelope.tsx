@@ -10,7 +10,7 @@ export default function Envelope() {
         minHeight: "60vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "end",
         alignItems: "center",
       }}
     >
@@ -57,8 +57,8 @@ export default function Envelope() {
             style={{
               width: "95%",
               borderRadius: "4px", // Sharper corners for a card look
-              boxShadow: open 
-                ? "0 20px 40px rgba(0,0,0,0.2)" 
+              boxShadow: open
+                ? "0 20px 40px rgba(0,0,0,0.2)"
                 : "0 5px 15px rgba(0,0,0,0.1)",
               border: "4px solid white", // Frame effect
             }}
@@ -81,21 +81,21 @@ export default function Envelope() {
 
           {/* MAIN BODY */}
           <rect width="400" height="225" rx="4" fill="url(#envMain)" />
-          
+
           {/* SIDES (FOLD LINES) */}
           <polygon points="0,0 200,112 0,225" fill="#EFEDE7" stroke="#DED9CE" strokeWidth="0.5" />
           <polygon points="400,0 200,112 400,225" fill="#EFEDE7" stroke="#DED9CE" strokeWidth="0.5" />
-          
+
           {/* BOTTOM POCKET */}
           <polygon points="0,225 200,112 400,225" fill="#F4F1EA" stroke="#DED9CE" strokeWidth="0.5" />
         </svg>
 
         {/* ✅ TOP FLAP */}
-        <svg viewBox="0 0 400 225" style={{ 
-          position: "absolute", 
-          inset: 0, 
+        <svg viewBox="0 0 400 225" style={{
+          position: "absolute",
+          inset: 0,
           zIndex: open ? 5 : 20, // Goes behind card when open
-          transition: "z-index 0s step-end 0.5s" 
+          transition: "z-index 0s step-end 0.5s"
         }}>
           <g style={{
             transformOrigin: "center 0px",
@@ -108,14 +108,14 @@ export default function Envelope() {
 
         {/* ✅ WAX SEAL (STAYS ON THE FLAP) */}
         <div style={{
-           position: "absolute",
-           top: "105px",
-           left: "50%",
-           transform: open ? "translate(-50%, -220px) scale(0.5)" : "translate(-50%, 0) scale(1)",
-           opacity: open ? 0 : 1,
-           transition: "all 0.6s ease-in-out",
-           zIndex: 30,
-           pointerEvents: "none"
+          position: "absolute",
+          top: "105px",
+          left: "50%",
+          transform: open ? "translate(-50%, -220px) scale(0.5)" : "translate(-50%, 0) scale(1)",
+          opacity: open ? 0 : 1,
+          transition: "all 0.6s ease-in-out",
+          zIndex: 30,
+          pointerEvents: "none"
         }}>
           {/* Wax Seal Circle */}
           <div style={{
@@ -152,6 +152,29 @@ export default function Envelope() {
           }}
         />
       </div>
+
+      <img
+        src="/images/flower-fall.png"
+        alt=""
+        className="absolute top-1/2 -translate-y-1/2"
+        style={{
+          right: '6px',
+          width: '16%',
+          top: '10%',
+          pointerEvents: 'none'
+        }}
+      />
+      <img
+        src="/images/flower-right.png"
+        alt=""
+        className="absolute top-1/2 -translate-y-1/2"
+        style={{
+          left: '6px',
+          width: '16%',
+          top: '10%',
+          pointerEvents: 'none'
+        }}
+      />
     </div>
   );
 }
