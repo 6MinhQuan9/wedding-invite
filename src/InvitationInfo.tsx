@@ -6,8 +6,9 @@ export default function InvitationInfo() {
   // 1. Get URL Parameters logic
   // URL example: yourdomain.com/?name=Anh Quý&partner=Chị Lan
   const queryParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
-  const guestName = queryParams?.get("name") || "Bạn";
-  const partnerName = queryParams?.get("partner");
+  const decodeParam = (param: any) => param ? decodeURIComponent(param) : null;
+  const guestName = decodeParam(queryParams?.get("name")) || "Bạn";
+  const partnerName = decodeParam(queryParams?.get("partner"));
 
   return (
     <section className="mt-24 w-full max-w-lg px-6" style={{
