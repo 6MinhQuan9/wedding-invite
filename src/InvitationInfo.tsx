@@ -25,7 +25,7 @@ export default function InvitationInfo() {
     gai: {
       venue: "TU GIA NHÀ GÁI",
       address: "TDP Đại Hội, phường Thái Bình, tỉnh Hưng Yên",
-      time: "15: 00 , THỨ SÁU",
+      time: "17: 00 , THỨ SÁU",
       date: "23",
       month: "01",
       year: "2026",
@@ -70,13 +70,28 @@ export default function InvitationInfo() {
         {/* INVITATION TEXT */}
         <p className="mt-6 text-sm text-gray-700 tracking-wide">TRÂN TRỌNG KÍNH MỜI</p>
 
-        <div className="mt-2 flex flex-col items-center">
+           <div className="mt-2 flex flex-col items-center">
+
           <p className="alex-brush-regular" style={{ fontSize: '3rem', margin: '0' }}>
+
             {guestName}
+
           </p>
+
+
+
+          {/* Shows ONLY if partner param exists in URL */}
+
           {partnerName && (
-            <p className="text-sm text-gray-600 italic mt-1">cùng với {partnerName}</p>
+
+            <p className="text-sm text-gray-600 italic mt-1">
+
+              cùng với {partnerName}
+
+            </p>
+
           )}
+
         </div>
 
         <p className="mt-4 text-sm text-gray-700 leading-relaxed uppercase">
